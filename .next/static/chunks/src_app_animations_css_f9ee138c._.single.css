@@ -1,0 +1,77 @@
+/* [project]/src/app/animations.css [app-client] (css) */
+@keyframes gradient {
+  0% {
+    background-position: 0%;
+  }
+
+  50% {
+    background-position: 100%;
+  }
+
+  100% {
+    background-position: 0%;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: .8;
+    transform: scale(1.05);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: 8s infinite gradient;
+}
+
+.animate-float {
+  animation: 6s ease-in-out infinite float;
+}
+
+.animate-pulse {
+  animation: 2s ease-in-out infinite pulse;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0000004d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#3b82f6, #8b5cf6);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(#2563eb, #7c3aed);
+}
+
+/*# sourceMappingURL=src_app_animations_css_f9ee138c._.single.css.map*/
